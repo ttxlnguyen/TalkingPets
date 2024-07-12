@@ -20,10 +20,7 @@ public class MainApplication {
 
         // Obtain pet count to create new arraylist
         System.out.println("How many pets do you have?");
-        totalPets = scanner.nextInt();
-
-        // Scanner for next line
-        scanner.nextLine();
+        totalPets = Integer.valueOf(scanner.nextLine());
 
         // For loop to cycle based on number of Pets
         for (int i = 1; i < totalPets + 1; i++) {

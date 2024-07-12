@@ -9,7 +9,6 @@ public class Pet {
     }
 
     public Pet() {
-
     }
 
     public String speak() {

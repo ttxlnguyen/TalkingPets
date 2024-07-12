@@ -30,12 +30,10 @@ public class MainApplication {
             System.out.println(i + ". What kind of pet is it? (Dragon, Dog, Cat)");
             petAnimal = scanner.nextLine().toLowerCase();
 
-            boolean input = true;
-
             // Checks for correct input
-            while (input) {
+            while (true) {
                 if (petAnimal.equalsIgnoreCase("dragon") || petAnimal.equalsIgnoreCase("dog") || petAnimal.equalsIgnoreCase("cat")) {
-                    input = false;
+                    break;
                 } else {
                     System.out.println("That doesn't look right, try again: Dragon, Dog, or Cat?");
                     petAnimal = scanner.nextLine().toLowerCase();
@@ -60,10 +58,9 @@ public class MainApplication {
             }
         }
 
-        // For each object(pet) that the user has, print pet name and speech
+        // For each animal(pet) that the user has, print pet name and speech
         for (Pet animal : petList){
-            System.out.println(animal.getName() + " says " + animal.speak());
+            System.out.println(animal.getName() + " said " + animal.speak());
         }
-
     }
 }
